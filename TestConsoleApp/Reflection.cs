@@ -7,7 +7,7 @@ namespace TestConsoleApp {
     class Reflection {
 
         public static void run() {
-            var pathToExe = @"C:\repos\ken-tech-prep\TestConsoleApp\ExeForReflection\bin\Debug\ExeForReflection.exe";
+            var pathToExe = @"C:\repos\ken\TestConsoleApp\ExeForReflection\bin\Debug\ExeForReflection.exe";
             Assembly asm = Assembly.LoadFile(pathToExe);
             Type t = asm.GetType("ExeForReflection.Program");
             object o = Activator.CreateInstance(t);

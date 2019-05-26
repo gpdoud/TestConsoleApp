@@ -1,9 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using TestConsoleApp.DI;
 
 namespace TestConsoleApp {
     class Program {
         static void Main(string[] args) {
+
+            Animal duck = new Animal(new Quack());
+            duck.MakeSound();
+            Animal dog = new Animal(new Bark());
+            dog.MakeSound();
+            Animal studderingDuck = new Animal(new QuackQuack());
+            studderingDuck.MakeSound();
 
             /*
              * This is an example of using a class in a compiled assembly as
