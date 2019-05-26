@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{24F1C63A-38B6-4310-B055-0EA1B10F65BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CAA5E9A6-C91F-4B10-8908-5A0F6492045C} = {CAA5E9A6-C91F-4B10-8908-5A0F6492045C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExeForReflection", "ExeForReflection\ExeForReflection.csproj", "{CAA5E9A6-C91F-4B10-8908-5A0F6492045C}"
 EndProject
