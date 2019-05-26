@@ -5,6 +5,8 @@ namespace TestConsoleApp {
     class Program {
         static void Main(string[] args) {
 
+            Reflection.run();
+
             FactoryDesignPattern.run();
 
             DemoExceptions demo = new DemoExceptions();
