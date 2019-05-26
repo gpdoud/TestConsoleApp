@@ -5,9 +5,14 @@ namespace TestConsoleApp {
     class Program {
         static void Main(string[] args) {
 
+            FactoryDesignPattern.run();
+
+            DemoExceptions demo = new DemoExceptions();
+            demo.run();
+
             List<Account> accounts = new List<Account>();
 
-            accounts.Add(new Account());
+            //accounts.Add(new Account());
             accounts.Add(new Savings());
 
             foreach(var account in accounts) {
@@ -32,6 +37,10 @@ namespace TestConsoleApp {
     class Savings : Account {
         public override void Print() {
             Console.WriteLine("Savings");
+        }
+
+        public override void Write() {
+            throw new NotImplementedException();
         }
     }
     /// <summary>
